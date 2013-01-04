@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  
+    <display-name>Core-this is my brain</display-name>
+    <servlet>
+        <servlet-name>FinancialServlet</servlet-name>
+        <servlet-class>Financial.FinancialServlet</servlet-class>
+        </servlet>
+    <servlet>
+        <servlet-name>FrontControler</servlet-name>
+        <servlet-class>controler.FrontControler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FinancialServlet</servlet-name>
+        <url-pattern>/Financial</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FrontControler</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    </web-app>
